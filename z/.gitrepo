@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = /home/gb/dotfiles/z
+	branch = master
+	commit = 1a361f6dc10e54e34e42f1e03850692959c6b413
+	parent = d66318348aa3f30aaa2e32a3c0b423047d256f95
+	cmdver = 0.3.1
