@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = /home/gb/dotfiles/theme
+	branch = master
+	commit = 59108e824eb00735fce1e4e4cb82ea14d6b10af4
+	parent = 577053241ada1952bbc06a7bc63bcbeeb7e2ff18
+	cmdver = 0.3.1
