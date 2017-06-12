@@ -1,1 +1,135 @@
-{"magic":"nassh-prefs","version":1,"nassh":{"profile-ids":[{"id":"eb30","json":{"description":"tunnel tmux","username":"gb","hostname":"gb.cs.unc.edu","port":"","identity":"id_rsa","argstr":"-L8990:localhost:8990 -L8991:localhost:8991 -L8080:localhost:8080 -L3389:152.2.133.180:3389 -L3000:localhost:3000 -t -- /home/gb/bin/mytmux new-session -A -s gb","terminal-profile":"solarizedDark"}},{"id":"1985","json":{"description":"tmux","username":"gb","hostname":"gb.cs.unc.edu","port":"","argstr":"-t -- /home/gb/bin/tmux new-session -A -s gb","terminal-profile":"solarizedLight"}},{"id":"cb70","json":{"description":"tunnel","username":"gb","hostname":"gb.cs.unc.edu","port":"","identity":"id_rsa","argstr":"-D 8080 -L8889:localhost:8889 "}},{"id":"f113","json":{"description":"plain","username":"gb","hostname":"gb.cs.unc.edu","port":"","identity":"id_rsa","terminal-profile":"default"}},{"id":"9d55","json":{"description":"gb@login.cs.unc.edu","username":"gb","hostname":"login.cs.unc.edu","port":""}},{"id":"1d1f","json":{"description":"rpi","username":"pi","hostname":"raspberrypi","port":"","identity":"id_rsa"}}]},"hterm":{"solarizedDark":{"background-color":"#002b36","cursor-color":"rgba(238, 232, 213, 0.5)","color-palette-overrides":["#073642","#dc322f","#859900","#b58900","#268bd2","#d33682","#2aa198","#eee8d5","#002b36","#cb4b16","#586e75","#657b83","#839496","#6c71c4","#93a1a1","#fdf6e3"],"font-family":"monospace","font-size":"14","foreground-color":"#839496","scrollbar-visible":false},"solarizedLight":{"background-color":"#eee8d5","cursor-blink":true,"cursor-blink-cycle":[1350,150],"cursor-color":"rgba(38, 139, 210, 0.35)","color-palette-overrides":["#073642","#dc322f","#859900","#b58900","#268bd2","#d33682","#2aa198","#eee8d5","#002b36","#cb4b16","#586e75","#657b83","#839496","#6c71c4","#93a1a1","#fdf6e3"],"enable-bold":true,"enable-bold-as-bright":false,"font-family":"\"Source Code Pro\", monospace","font-size":18,"foreground-color":"#002b36","scrollbar-visible":false,"user-css":"http://fonts.googleapis.com/css?family=Ubuntu+Mono|Droid+Sans+Mono|Source+Code+Pro:400|Anonymous+Pro|Cousine:700"},"default":{}}}
+{
+    "hterm": {
+        "default": {},
+        "solarizedDark": {
+            "background-color": "#002b36",
+            "color-palette-overrides": [
+                "#073642",
+                "#dc322f",
+                "#859900",
+                "#b58900",
+                "#268bd2",
+                "#d33682",
+                "#2aa198",
+                "#eee8d5",
+                "#002b36",
+                "#cb4b16",
+                "#586e75",
+                "#657b83",
+                "#839496",
+                "#6c71c4",
+                "#93a1a1",
+                "#fdf6e3"
+            ],
+            "cursor-color": "rgba(238, 232, 213, 0.5)",
+            "font-family": "monospace",
+            "font-size": "14",
+            "foreground-color": "#839496",
+            "scrollbar-visible": false
+        },
+        "solarizedLight": {
+            "background-color": "#eee8d5",
+            "color-palette-overrides": [
+                "#073642",
+                "#dc322f",
+                "#859900",
+                "#b58900",
+                "#268bd2",
+                "#d33682",
+                "#2aa198",
+                "#eee8d5",
+                "#002b36",
+                "#cb4b16",
+                "#586e75",
+                "#657b83",
+                "#839496",
+                "#6c71c4",
+                "#93a1a1",
+                "#fdf6e3"
+            ],
+            "cursor-blink": true,
+            "cursor-blink-cycle": [
+                1350,
+                150
+            ],
+            "cursor-color": "rgba(38, 139, 210, 0.35)",
+            "enable-bold": true,
+            "enable-bold-as-bright": false,
+            "font-family": "\"Source Code Pro\", monospace",
+            "font-size": 18,
+            "foreground-color": "#002b36",
+            "scrollbar-visible": false,
+            "user-css": "http://fonts.googleapis.com/css?family=Ubuntu+Mono|Droid+Sans+Mono|Source+Code+Pro:400|Anonymous+Pro|Cousine:700"
+        }
+    },
+    "magic": "nassh-prefs",
+    "nassh": {
+        "profile-ids": [
+            {
+                "id": "eb30",
+                "json": {
+                    "argstr": "-L8990:localhost:8990 -L8991:localhost:8991 -L8080:localhost:8080 -L3389:152.2.133.180:3389 -L3000:localhost:3000 -t -- /home/gb/bin/mytmux new-session -A -s gb",
+                    "description": "tunnel tmux",
+                    "hostname": "gb.cs.unc.edu",
+                    "identity": "id_rsa",
+                    "port": "",
+                    "terminal-profile": "solarizedDark",
+                    "username": "gb"
+                }
+            },
+            {
+                "id": "1985",
+                "json": {
+                    "argstr": "-t -- /home/gb/bin/tmux new-session -A -s gb",
+                    "description": "tmux",
+                    "hostname": "gb.cs.unc.edu",
+                    "port": "",
+                    "terminal-profile": "solarizedLight",
+                    "username": "gb"
+                }
+            },
+            {
+                "id": "cb70",
+                "json": {
+                    "argstr": "-D 8080 -L8889:localhost:8889 ",
+                    "description": "tunnel",
+                    "hostname": "gb.cs.unc.edu",
+                    "identity": "id_rsa",
+                    "port": "",
+                    "username": "gb"
+                }
+            },
+            {
+                "id": "f113",
+                "json": {
+                    "description": "plain",
+                    "hostname": "gb.cs.unc.edu",
+                    "identity": "id_rsa",
+                    "port": "",
+                    "terminal-profile": "default",
+                    "username": "gb"
+                }
+            },
+            {
+                "id": "9d55",
+                "json": {
+                    "description": "gb@login.cs.unc.edu",
+                    "hostname": "login.cs.unc.edu",
+                    "port": "",
+                    "username": "gb"
+                }
+            },
+            {
+                "id": "1d1f",
+                "json": {
+                    "description": "rpi",
+                    "hostname": "raspberrypi",
+                    "identity": "id_rsa",
+                    "port": "",
+                    "username": "pi"
+                }
+            }
+        ]
+    },
+    "version": 1
+}
