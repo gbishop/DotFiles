@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = /home/gb/dotfiles/python
+	branch = master
+	commit = b24f29c526c72347bf20201e4bcd3fa70e944f9b
+	parent = 8e20eef076e71d7b8ad02e308aacb586bc08a7d7
+	cmdver = 0.3.1
