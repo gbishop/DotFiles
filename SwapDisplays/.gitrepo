@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = /home/gb/dotfiles/SwapDisplays
+	branch = master
+	commit = 3688af339399a3c1535b201a96fe451d9d74c5d2
+	parent = 6924d7686ba48e5aacc4013dd6cc663940461139
+	cmdver = 0.3.1
