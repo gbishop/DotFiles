@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = /home/gb/dotfiles/pass
+	branch = master
+	commit = 94d36bb46d5a4a9ae57e77c6ffcac9b2fa7f767e
+	parent = 5c98f75e2c489fc1f543a45f22b848b38faf52b5
+	cmdver = 0.3.1
