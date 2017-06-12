@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/gb/bin/FixCapsLock.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Fix caps lock
+Name=Fix caps lock
+Comment[en_US]=Make caps lock be Escape when tapped and Control otherwise
+Comment=Make caps lock be Escape when tapped and Control otherwise
+X-GNOME-Autostart-Delay=1

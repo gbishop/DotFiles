@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = /home/gb/dotfiles/xcape
+	branch = master
+	commit = 6be4f0a49de1faf20fb0b2e2c998d93e88b97e6b
+	parent = f5027607f6bde1339592ac12edf3e2caae2eec7c
+	cmdver = 0.3.1
