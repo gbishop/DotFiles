@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = /home/gb/dotfiles/fonts
+	branch = master
+	commit = f762d8a0f1dee25dab21e95cdc4679d27e0238cc
+	parent = 0ade96cbc63cca262edf02d46d0014fb4a8cdbaa
+	cmdver = 0.3.1
