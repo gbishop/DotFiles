@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = /home/gb/dotfiles/yank
+	branch = master
+	commit = 0d97312d977c1188a40757d572de918a986fec30
+	parent = 325f9930424c5d7a82f79aa1dc191eccc2717d58
+	cmdver = 0.3.1
