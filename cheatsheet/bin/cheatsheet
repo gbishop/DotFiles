@@ -1,0 +1,80 @@
+#!/usr/bin/python3
+# vim: ft=python
+import csv
+from termcolor import colored
+import sys
+import os.path as osp
+import os
+import argparse
+import subprocess
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--window', action='store_false',
+    help='do not create a new window')
+parser.add_argument('--less', action='store_false',
+    help='do not use less')
+parser.add_argument('filename')
+args = parser.parse_args()
+
+if args.window:
+  subprocess.run(['tmux', 'new-window', 'cheatsheet', '--window', args.filename])
+  sys.exit(0)
+
+fname = args.filename
+
+if not osp.exists(fname):
+  home = os.environ['HOME']
+  fname = osp.join(home, 'lib', fname)
+
+def readsheet(sheet):
+  '''Read csv stripping of whitespace'''
+  with open(sheet) as csvfile:
+    reader = csv.reader(csvfile, delimiter='|')
+    return [[f.strip() for f in row] for row in reader]
+
+sheet = readsheet(fname)
+
+# get the max width of each column
+w = [0, 0, 0]
+for row in sheet:
+  for i, f in enumerate(row):
+    w[i] = max(w[i], len(f))
+
+# min space between fields
+pad = 2
+
+# format each row
+lines = []
+for row in sheet:
+  line = []
+  if row and row[0].startswith('#'):
+    continue
+  mode, keys, function = row
+  wm, wk, wf = w
+
+  bg = None
+  if mode:
+    bg = 'on_grey'
+  mode = str.ljust(mode, wm+pad)
+  mode = colored(mode, 'red', bg)
+
+  keys = str.ljust(keys, wk+pad)
+  keys = colored(keys, 'white', bg, attrs=['bold'])
+
+  function = str.ljust(function, wf+pad)
+  function = colored(function, 'blue', bg)
+
+  lines.append(' '*5+mode+keys+function)
+
+# construct the full output
+output = '\n'.join(lines)
+
+if args.less:
+  # pipe it through less
+  less = subprocess.Popen(["less", '-R'], stdin=subprocess.PIPE)
+  less.stdin.write(output.encode('utf-8'))
+  less.stdin.close()
+  less.wait()
+else:
+  print(output)
+
