@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = /home/gb/dotfiles/src/vim-static
+	branch = master
+	commit = 256a8be9565d0445a1c7b2db0c71985b9fee94fe
+	parent = bb6f57a46d0c63e744873b50411f7db502fc1063
+	cmdver = 0.3.1
