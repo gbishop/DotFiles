@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = /home/gb/dotfiles/tmux
+	branch = master
+	commit = 3e6db1d49de63edb185ef4e2f0256a76f2a45e44
+	parent = ce341132ce6b2540a2d49d2f77f6ca3c92f14741
+	cmdver = 0.3.1

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# helper for tmux window splits over ssh
+
+title=$(/home/gb/bin/tmux display-message -p \#{pane_title})
+IFS=':' read -a f <<< $title
+host=${f[0]}
+dir=${f[1]}
+/home/gb/bin/tmux $* ssh -t $host "cd $dir; bash -l "
+

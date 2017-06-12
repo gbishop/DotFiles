@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=tv
+Comment=Launch tmux running vim
+Icon=vim
+Exec=gnome-terminal --profile=Edit  -e "tmux -f /home/gb/.tmux-vim.conf attach"
+Path=/home/gb
+NoDisplay=false
+Categories=Development;
+StartupWMClass=TV
+StartupNotify=false
+Terminal=false
