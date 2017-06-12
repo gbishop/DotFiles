@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = /home/gb/dotfiles/ChromeSecureShell
+	branch = master
+	commit = 6a76cd736a38cfc1be8e0e1b7d162d0782dc142f
+	parent = 593a8c15faa2664d61e37c43ed0bf58a42eb3630
+	cmdver = 0.3.1
