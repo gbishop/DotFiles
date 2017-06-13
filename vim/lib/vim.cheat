@@ -1,0 +1,42 @@
+Gstatus     | -         | stage
+            | D         | diff
+            | cc        | commit
+Gdiff       | do        | pull change over
+            | dp        | push it
+            | zR        | open all folds
+            | zo        | open fold
+            | zc        | close fold
+gitgutter   | ]c        | next hunk
+            | [c        | previous hunk
+            | ;hs       | stage a hunk
+            | ;hu       | undo
+            | .         | repeat
+            | ;hp       | preview
+Buffers     | ;a        | list buffers and select
+            | ;2        | previous buffer
+            | ;3        | 3rd previous buffer
+            | S-Tab     | back buffer
+            | C-S-Tab   | next buffer
+            | :pc       | close preview window
+            | ;e        | open file from same folder
+	    | ;f	| use FZF to open a file
+	    | ;F	| use FZF to open a file
+            | ;s        | split and open file from same folder
+Tsuquyomi   | C-]       | go to definition
+            | C-t       | go back
+            | C-^       | list where symbol is referenced
+            | ;t        | info about current symbol
+Motion      | *         | search for current word
+            | :lnext    | next error
+            | :lprev    | previous error
+            | V%        | on 1st line to mark entire function
+            | o         | in visual mode for other end
+            | vat       | for selected tags
+            | C-q       | visual column select
+Misc        | W!        | write with sudo
+FZF	    | pattern   | find file by key
+            | CR	| select current file
+	    | C-v       | select in vertical split
+            | C-x       | select in horizontal
+json	    | 		| :%!python -m json.tool
+# vim: sw=12

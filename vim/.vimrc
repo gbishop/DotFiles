@@ -108,6 +108,8 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'ianks/vim-tsx'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'kana/vim-operator-user'
+Plugin 'gbishop/vim-operator-yank'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -151,11 +153,15 @@ let g:BufstopAutoSpeedToggle = 1       " now I can press ;3;3;3 to cycle the las
 " copy to attached terminal using the yank(1) script:
 " https://github.com/sunaku/home/blob/master/bin/yank
 " handle yy
-onoremap <silent> y y:call system('yank > /dev/tty', @0)<Return>
+" onoremap <silent> y y:call system('yank > /dev/tty', @0)<Return>
 " and y in visual mode
-vnoremap <silent> y y:call system('yank > /dev/tty', @0)<Return>
+" vnoremap <silent> y y:call system('yank > /dev/tty', @0)<Return>
 " handle other cases with <leader>y to copy the yank buffer
-map <leader>y :call system('yank > /dev/tty', @0)<Return>
+" map <leader>y :call system('yank > /dev/tty', @0)<Return>
+"
+" my slightly hacked operator-yank plugin handles it now
+map y  <Plug>(operator-yank)
+map Y  <Plug>(operator-yank)$
 
 " Code from:
 " http://stackoverflow.com/questions/5585129/pasting-code-into-terminal-window-into-vim-on-mac-os-x
