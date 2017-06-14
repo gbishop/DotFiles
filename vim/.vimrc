@@ -209,6 +209,10 @@ vmap <expr> <f28> XTermPasteBegin("c")
 cmap <f28> <nop>
 cmap <f29> <nop>
 
+" mouse mode
+set mouse=a
+set ttyfast
+
 " open files in same folder as current file
 map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>s :split <C-R>=expand("%:p:h") . "/" <CR>

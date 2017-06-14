@@ -6,6 +6,6 @@
 [subrepo]
 	remote = /home/gb/dotfiles/vim
 	branch = master
-	commit = eb694b71c6c1798e3dfed6acf5bb90bb55c453b0
-	parent = b06ebfd03433fa80e574519db8d5b2d8770c844c
+	commit = 5c0c36dd74bffd8901082e67fc8781994b822957
+	parent = 0b6cf4d8eea3bf1975ce101a0590fea4143cc7b6
 	cmdver = 0.3.1
