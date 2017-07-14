@@ -4,6 +4,8 @@ A subset of my Ubuntu dotfiles for sharing
 I'm experimenting with git-subrepo to publish part of my dotfiles
 to github for sharing with others.
 
+Use `git subrepo pull <dir>` to update from my production repos.
+
 I deploy them with the included Makefile using the gnu stow command.
 
 These settings allow seamless motion between Vim splits and tmux panes,
