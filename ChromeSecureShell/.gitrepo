@@ -6,6 +6,6 @@
 [subrepo]
 	remote = /home/gb/dotfiles/ChromeSecureShell
 	branch = master
-	commit = 98dd235f62373fc1e5692f7cb19c3b0dbf8510d7
-	parent = 2b49e09a6de36c4adda8f77911d7cf53c1200795
+	commit = 13a9d96a7c2b20a7e85c0db57baea580bd0098e2
+	parent = a8470d0f9bbf9efc92b68ca8112712ff087811e5
 	cmdver = 0.3.1
